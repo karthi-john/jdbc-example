@@ -13,8 +13,8 @@ class Main{
      Statement st= con.createStatement();
      ResultSet rs=st.executeQuery(query);
      while(rs.next()){
-     int points=rs.getInt("points");
-     System.out.println(points);}
+     String name=rs.getString("first_name");
+     System.out.println(name);}
      st.close();
      con.close();
 
